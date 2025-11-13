@@ -99,7 +99,7 @@ The target users include:
 
 **1. Clone this repository**
    ```bash
-   git clone https://github.com/<your-username>/land-price-prediction.git
+   git clone https://github.com/<your-username>/mumbai-house-price-prediction.git
    cd land-price-prediction
    ```
 
