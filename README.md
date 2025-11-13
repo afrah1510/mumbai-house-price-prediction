@@ -76,11 +76,11 @@ The target users include:
 
 ## Features
 
-✅ Predict land prices based on multiple influencing factors  
-✅ Analyze COVID-19’s impact on Mumbai’s real estate prices  
-✅ Visualize property price trends using data analytics  
-✅ Simple web interface for user interaction  
-✅ Model built using Decision Tree Regression  
+- Predict land prices based on multiple influencing factors
+- Analyze COVID-19’s impact on Mumbai’s real estate prices
+- Visualize property price trends using data analytics
+- Simple web interface for user interaction
+- Model built using Decision Tree Regression  
 
 ---
 
