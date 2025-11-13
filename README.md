@@ -1,9 +1,9 @@
-# Land Price Prediction using Machine Learning
+# House Price Prediction using Machine Learning
 
 ## Abstract
 
 Machine learning algorithms are increasingly being used for the **mass appraisal of real estate** and in **automated valuation models (AVMs)** to help users make informed decisions.  
-This project aims to develop a **predictive model for land prices in Mumbai** using machine learning algorithms, while also **analyzing the impact of the COVID-19 pandemic** on property values.
+This project aims to develop a **predictive model for house prices in Mumbai** using machine learning algorithms, while also **analyzing the impact of the COVID-19 pandemic** on property values.
 
 The model considers several influential factors such as:
 - Location  
