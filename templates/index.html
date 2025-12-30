@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>House Price Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="container">
+        <h1>🏠 House Price Prediction</h1>
+        <form method="POST">
+            <div class="form-group">
+                <label>Area (sqft):</label>
+                <input type="number" name="area" required>
+            </div>
+
+            <div class="form-group">
+                <label>Number of Bedrooms:</label>
+                <input type="number" name="bedroom_num" required>
+            </div>
+
+            <div class="form-group">
+                <label>Number of Bathrooms:</label>
+                <input type="number" name="bathroom_num" required>
+            </div>
+
+            <div class="form-group">
+                <label>Number of Balconies:</label>
+                <input type="number" name="balcony_num" required>
+            </div>
+
+            <div class="form-group">
+                <label>Age of Property (years):</label>
+                <input type="number" name="age" required>
+            </div>
+
+            <div class="form-group">
+                <label>Total Floors:</label>
+                <input type="number" name="total_floors" required>
+            </div>
+
+            <div class="form-group">
+                <label>Locality:</label>
+                <select name="locality">
+                    {% for loc in options['locality'] %}
+                    <option value="{{ loc }}">{{ loc }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Property Type:</label>
+                <select name="property_type">
+                    {% for pt in options['property_type'] %}
+                    <option value="{{ pt }}">{{ pt }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Furnished:</label>
+                <select name="furnished">
+                    {% for f in options['furnished'] %}
+                    <option value="{{ f }}">{{ f }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+
+            <button type="submit">Predict Price</button>
+        </form>
+
+        {% if result %}
+        <div class="result">
+            <h2>Prediction</h2>
+            <p>💰 Estimated Total Price: ₹{{ result['predicted_price'] }}</p>
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>
