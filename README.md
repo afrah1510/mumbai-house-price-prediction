@@ -14,7 +14,7 @@ The model considers several influential factors such as:
 - Demographic trends  
 
 According to **Anarock Research**, there has been a **13% increase in the average property prices** across the Mumbai Metropolitan Region (MMR).  
-Our predictive model is based on **Decision Tree Regression**, a robust statistical method for predictive analysis.  
+Our predictive model is based on **Random Forest Regression**, a robust statistical method for predictive analysis.  
 
 This project will benefit:
 - Real estate professionals  
